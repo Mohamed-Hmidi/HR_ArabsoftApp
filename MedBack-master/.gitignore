@@ -1,0 +1,13 @@
+# Build output
+dist/
+build/
+target/
+
+./MedBack-master/IMPORT
+
+*.sql
+Back-master/MedBack-master/IMPORT/*.txt
+
+*.txt
+
+/MedBack-mastere/IMPORT/*

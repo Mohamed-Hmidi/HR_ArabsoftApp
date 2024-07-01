@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+dist
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.cache
+.angular/cache
+npm-cache
+.yarn/cache
+.pnpm-store

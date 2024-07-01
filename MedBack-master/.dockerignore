@@ -1,0 +1,21 @@
+Git-specific files
+.git/
+.gitignore
+
+# Project-specific files
+*.iml
+.project
+.settings/
+.classpath
+
+# Logs
+logs/
+*.log
+
+# Temporary files and directories
+tmp/
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
