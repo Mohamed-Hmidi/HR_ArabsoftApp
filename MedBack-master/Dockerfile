@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/Authpfe-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port on which the Spring Boot app will run
-EXPOSE 8090
+EXPOSE 8080
 
 # Run the JAR file
 ENTRYPOINT ["java", "-jar", "app.jar"]
