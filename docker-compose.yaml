@@ -10,6 +10,17 @@ services:
       - mysql-data:/var/lib/mysql
       - ./MedBack-master/IMPORT/:/docker-entrypoint-initdb.d
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin-container
+    environment:
+      PMA_HOST: mysql-container
+      MYSQL_ROOT_PASSWORD: ""
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql
+
   backend:
     build: ./MedBack-master
     container_name: rh-springboot-container
@@ -26,7 +37,7 @@ services:
     build: ./Front-master
     container_name: rh-angular-container
     ports:
-      - "4200:4200" 
+      - "4200:4200"
     command: npm start
     volumes:
       - ./Front-master:/app  # Ensure correct project directory is mapped
@@ -35,3 +46,4 @@ services:
 
 volumes:
   mysql-data:
+ 
